@@ -5,11 +5,10 @@
     --navbar-border-radius: 3vh; /* 3% of the viewport height for dynamic border-radius */
     --navbar-border: 0.5vh; /* 0.5% of the viewport height for dynamic border */
     --navbar-background-color: #333;
-    --navbar-padding: 1vh; /* 1% of the viewport height for dynamic padding */
-}
+    --navbar-padding: 1vh; /* 1% of the viewport height for dynamic padding */}
 
 .navbar {
-    width: 90vh; /* 90% of the viewport width for dynamic width */
+    width:100vh; /* 90% of the viewport width for dynamic width */
     max-width: 1280px; /* Set a maximum width if needed */
     height: var(--navbar-height);
     background-color: var(--navbar-background-color);
@@ -21,7 +20,7 @@
     align-items: center;
     position: fixed;
     top: 2vh; /* 2% of the viewport height for dynamic top spacing */
-    right: 5vw; /* 5% of the viewport width for dynamic right spacing */
+    right: 10vw; /* 5% of the viewport width for dynamic right spacing */
 }
 
 .project-name {
@@ -61,6 +60,7 @@ a:hover {
         align-items: flex-start;
         width: 100%; /* Adjust width for smaller screens */
         right: 0; /* Adjust right spacing for smaller screens */
+        left:30vh;
     }
 
     li {

@@ -1,5 +1,5 @@
 import React from "react";
-import './StudyBuddy.css';
+import './studyBuddy.css';
 
 
 const StudyBuddy = () => {

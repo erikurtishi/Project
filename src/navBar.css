@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --navbar-height: 8vh; /* 8% of the viewport height for dynamic height */
+    --navbar-border-radius: 3vh; /* 3% of the viewport height for dynamic border-radius */
+    --navbar-border: 0.5vh; /* 0.5% of the viewport height for dynamic border */
+    --navbar-background-color: #333;
+    --navbar-padding: 1vh; /* 1% of the viewport height for dynamic padding */
+}
+
+.navbar {
+    width: 90vh; /* 90% of the viewport width for dynamic width */
+    max-width: 1280px; /* Set a maximum width if needed */
+    height: var(--navbar-height);
+    background-color: var(--navbar-background-color);
+    padding: var(--navbar-padding);
+    border-radius: var(--navbar-border-radius);
+    border: var(--navbar-border) solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 2vh; /* 2% of the viewport height for dynamic top spacing */
+    right: 5vw; /* 5% of the viewport width for dynamic right spacing */
+}
+
+.project-name {
+    color: white;
+    font-family: Montserrat;   
+    font-weight: 900; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 2vw; /* 2% of the viewport width for dynamic margin */
+    padding: 1vh; /* 1% of the viewport height for dynamic padding */
+    font-family: Montserrat;   
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #4BCC4E;
+}
+
+/* Media query for smaller screens if needed */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%; /* Adjust width for smaller screens */
+        right: 0; /* Adjust right spacing for smaller screens */
+    }
+
+    li {
+        margin-right: 0;
+        margin-bottom: 1vh;
+    }
+}
